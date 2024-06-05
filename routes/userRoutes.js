@@ -6,10 +6,10 @@ import { authUsers , registerUser, updateUser ,getUser , deleteUser } from '../c
 router.route('/').post(registerUser)
 .get(  getUser)
 router.post('/login' ,authUsers)
-// router.route('/profile').get(protect, getUserProfile).put(product , updateUserProfile)
+router.route('/profile').get(protect, getUserProfile).put(product , updateUserProfile)
 router.route('/:id')
 .delete( deleteUser)
-// .get(protect , admin , getUserById)
+.get(protect , admin , getUserById)
 .put(updateUser)
 
 
