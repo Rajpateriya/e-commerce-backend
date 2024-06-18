@@ -99,5 +99,5 @@ export {
   updateOrdeToPaid,
   getMyOrders,
   getOrders,
-  updateOrderToDelivered,
+  updateOrderToDelivered
 };
